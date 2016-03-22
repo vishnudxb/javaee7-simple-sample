@@ -33,12 +33,12 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://172.31.3.161:8081/nexus/content/repositories/releases/</url>
+            <url>dav:http://172.31.3.161:8081/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://172.31.3.161:8081/nexus/content/repositories/snapshots/</url>
+            <url>dav:http://172.31.3.161:8081/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <build>
@@ -122,6 +122,13 @@
 -->
             </plugin>
         </plugins>
+      <extensions>
+          <extension>
+              <groupId>org.apache.maven.wagon</groupId>
+              <artifactId>wagon-webdav-jackrabbit</artifactId>
+              <version>1.0-beta-7</version>
+          </extension>
+      </extensions>
     </build>
     <profiles>
         <profile>
