@@ -65,7 +65,7 @@
                     <artifactId>tomcat7-maven-plugin</artifactId>
                     <version>2.2</version>
                     <configuration>
-                    <url>http://http://172.31.3.161:80/manager/text</url>
+                    <url>http://172.31.3.161/manager/text</url>
                     <username>admin</username>
                     <password>password</password>
                     <path>${project.build.finalName}</path>
