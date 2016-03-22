@@ -43,12 +43,12 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>dav:http://172.31.3.161:80/site</url>
+            <url>http://172.31.3.161:80/site</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>dav:http://172.31.3.161/site</url>
+            <url>http://172.31.3.161/site</url>
         </snapshotRepository>
     </distributionManagement>
     <build>
